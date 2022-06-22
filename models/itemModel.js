@@ -8,7 +8,7 @@ const itemSchema = new mongoose.Schema({
     itemselled: { type: Number, required: true },
     itempopular: { type: Number, required: true },
     itemcategory: { type: String, required: true },
-    itemimg: { type: String, required: true }
+    itemimg: { type: String, required: false }
 }, { collection: 'items' })
 
 module.exports = mongoose.model("itemSchema", itemSchema)
